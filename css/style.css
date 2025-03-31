@@ -1,0 +1,100 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  /* Background */
+
+  /* plays theme song */
+body {
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+   /* need to try adding FF again */
+  background: black;
+  color: #ffe81f; 
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* dropdown */
+select {
+  padding: 12px 20px;
+  border: 2px solid #ffe81f;
+  background-color: #000;
+  color: #ffe81f;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 260px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffe81f;
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 15px #ffe81f, 0 0 10px #ffe81f inset;
+}
+
+/* button */
+button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(45deg, #ff0000, #ff5555);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #00e0ff, #00c3ff);
+  box-shadow: 0 0 15px #00e0ff, 0 0 30px #00e0ff;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+
+img {
+  max-width: 250px;
+  border: 3px solid #ffe81f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffe81f;
+}
+
+
+iframe {
+  width: 80%;
+  height: 300px;
+  border: 3px solid #ffe81f;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ffe81f;
+  background-color: #000;
+}
